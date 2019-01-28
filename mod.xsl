@@ -12,7 +12,7 @@
                 		<tbody>
                 			<tr>
                                 <td class="item" width="{100 div $len}%">
-                                    <a href="">
+                                    <a href="{href}">
                                         <img class="mainpic" style="background-image:url({$list[$len - $ext_count]/img})" src="//a.oxm1.cc/img/blank.png"/>
                                         <p class="text-box">
                                             <xsl:value-of select="$list[$len - $ext_count]/title"/>
@@ -22,7 +22,7 @@
                                 
     		            		<xsl:for-each select="$list">
     		            			<td class="item" width="{100 div $len}%">
-    		            				<a href="">
+    		            				<a href="{href}">
     			            				<img class="mainpic" style="background-image:url({img})" src="//a.oxm1.cc/img/blank.png"/>
     			            				<p class="text-box">
     			            					<xsl:value-of select="title"/>
@@ -31,7 +31,7 @@
     		            			</td>
     		            		</xsl:for-each>
                                 <td class="item" width="{100 div $len}%">
-                                    <a href="">
+                                    <a href="{href}">
                                         <img class="mainpic" style="background-image:url({$list[1]/img})" src="//a.oxm1.cc/img/blank.png"/>
                                         <p class="text-box">
                                             <xsl:value-of select="$list[1]/title"/>
@@ -39,7 +39,7 @@
                                     </a>
                                 </td>
                                 <td class="item" width="{100 div $len}%">
-                                    <a href="">
+                                    <a href="{href}">
                                         <img class="mainpic" style="background-image:url({$list[2]/img})" src="//a.oxm1.cc/img/blank.png"/>
                                         <p class="text-box">
                                             <xsl:value-of select="$list[2]/title"/>
